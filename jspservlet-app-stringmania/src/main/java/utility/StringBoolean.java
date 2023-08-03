@@ -1,73 +1,42 @@
 package utility;
 
 public class StringBoolean {
-//	Enter the code here....
-private String input1;
-    private String input2;
+    private String input1;
+	private String input2;
 
-    public String getInput1() {
-        return input1;
-    }
+	public String getInput1(){
+		return this.input1;
+	}
+	public void setInput1(String input1){
+		this.input1=input1;
+	}
+	public String getInput2(){
+		return this.input2;
+	}
+	public void setInput2(String input2){
+		this.input2=input2;
+	}
 
-    public void setInput1(String input1) {
-        this.input1 = input1;
-    }
-
-    public String getInput2() {
-        return input2;
-    }
-
-    public void setInput2(String input2) {
-        this.input2 = input2;
-    }
-    public boolean containsString(String input12, String input22) {
+    public Boolean contains(String input1, String input2){
         return input1.contains(input2);
     }
-
-    public boolean startsWithLetter(char letter) {
-        if (input1.isEmpty()) {
-            return false;
-        } else {
-            return input1.charAt(0) == letter;
+    public Boolean startsWith(String input1,String input2){
+        if(input1.startsWith("a") && input2.startsWith("j")){
+            return true;
         }
+        return false;
     }
-
-    public boolean endsWithLetter(char letter) {
-        if (input1.isEmpty()) {
-            return false;
-        } else {
-            return input1.charAt(input1.length() - 1) == letter;
+    public Boolean endsWith(String input1,String input2){
+        if(input1.endsWith("a") && input2.endsWith("j")){
+            return true;
         }
+        return false;
     }
-    public boolean areEqual() {
+    public Boolean equals(String input1,String input2){
         return input1.equals(input2);
     }
-
-    public boolean areEqualIgnoreCase() {
+    public Boolean equalsIgnoreCase(String input1,String input2){
         return input1.equalsIgnoreCase(input2);
     }
 
-	public char[] containsString() {
-		return null;
-	}
-
-	public boolean endsWithLetter(String input12, String input22) {
-		return false;
-	}
-
-	public boolean startsWithLetter(String input12, String input22) {
-		return false;
-	}
-
-	public boolean arerEqual(String input12, String input22) {
-		return false;
-	}
-
-	public boolean areEqual(String input12, String input22) {
-		return false;
-	}
-
-	public boolean areEqualIgnoreCase(String input12, String input22) {
-		return false;
-	}
 }

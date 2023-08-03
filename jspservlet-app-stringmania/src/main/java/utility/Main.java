@@ -1,4 +1,7 @@
 package utility;
+import utility.StringAdvanceMethod;
+import utility.StringMethod;
+import utility.StringBoolean;
 
 public class Main {
     public static void main(String[] args){
